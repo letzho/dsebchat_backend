@@ -54,7 +54,7 @@ admission_URL="https://www.nyp.edu.sg/student/study/admissions"
 
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-QNA_PATH = os.path.join(current_dir, "..", "QnA_03.docx")
+QNA_PATH = os.path.join(current_dir,  "QnA_03.docx")
 
 class QueryRequest(BaseModel):
     query: str
