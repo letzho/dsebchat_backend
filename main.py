@@ -37,7 +37,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "http://127.0.0.1:5174",  # Add this line too for completeness
+        "https://dsebchat-frontend-29da6c2ca4ad.herokuapp.com/",  # Add this line too for completeness
     ],
     allow_credentials=True,
     allow_methods=["*"],
