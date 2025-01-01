@@ -36,7 +36,6 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
         "https://dsebchat-frontend-29da6c2ca4ad.herokuapp.com/",  # Add this line too for completeness
     ],
     allow_credentials=True,
