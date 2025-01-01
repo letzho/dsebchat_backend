@@ -267,7 +267,7 @@ async def query_documents(request: QueryRequest):
         
         llm = ChatOpenAI(
             model="gpt-4o-mini",
-            temperature=0.3,
+            temperature=0.7,
             api_key=os.getenv("OPENAI_API_KEY"),
             max_tokens=4000 
         )
@@ -316,7 +316,7 @@ async def query_documents(request: QueryRequest):
                     • Math
             4. Remove any disclaimers when you have the information
             5. When answering questions about specific years, pay close attention to keywords like 'Year 1','Year 2', or 'Year 3' to provide the correct information. Do not mix content from different years.
-            6. When you are asked about the entry requirement, ask user to provide if they are O-Level, A-Level, N-level or other level student, then provide correct response.
+            6. When asked about job opportunities, provide general job options first. If the user seeks specific roles or entry requirements, then ask for their educational level (O-Level, A-Level, N-Level, or other).
             7. When you don't find specific information, then you MUST:
                 • Acknowledge that you don't have the specific information
                 • Recommend the user to visit the relevant URL from the list below
